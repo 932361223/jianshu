@@ -1,5 +1,8 @@
-import { createStore, compose } from 'redux'
+import { createStore, compose, applyMiddleware } from 'redux'
+import thunk from 'redux-thunk' //使得disPatch可发送异步
 import reducer from './reducer'
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const store = createStore(reducer, composeEnhancers())
-export default store
+const store = createStore(reducer, composeEnhancers(
+  applyMiddleware(thunk)
+))
+export default store  
