@@ -23,7 +23,7 @@ class Home extends PureComponent {
     return (
       <HomeWrapper>
         <HomeLeft>
-          <img className='banner-img' alt='' src="//upload.jianshu.io/admin_banners/web_images/4318/60781ff21df1d1b03f5f8459e4a1983c009175a5.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540" />
+          <img className='banner-img' alt='' src="https://img.yzcdn.cn/public_files/2017/12/18/fd78cf6bb5d12e2a119d0576bedfd230.png" />
           <Topic />
           <List />
         </HomeLeft>
@@ -42,6 +42,7 @@ class Home extends PureComponent {
   }
 
   componentWillUnmount () {
+    //销毁
     window.removeEventListener('scroll', this.props.changeScrollTopShow);
   }
 

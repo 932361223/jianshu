@@ -44,9 +44,9 @@ export const TopicItem = styled.div`
 	.topic-pic {
 		display: block;
 		float: left;
-		width: 32px;
-		height: 32px;
-		margin-right: 10px;
+		width: 27px;
+    height: 27px;
+    margin:1.7px 8px 0 2px
 	}
 `;
 
